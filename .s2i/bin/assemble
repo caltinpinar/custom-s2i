@@ -10,15 +10,14 @@ config_s2i
 
 echo "---> Installing application source"
 cp -af /tmp/src/. ./
-#rm -rf ./*
 
-echo `pwd`
 
+#this is added for custom source code 
 cp -v ./src/* ./
 
+#this 2 line added for info.html
 DATE=`date -I`
-
-echo "veni vidi vici on $Date" > ./info.html
+echo "veni vidi vici on $DATE" > ./info.html
 
 # Fix source directory permissions
 fix-permissions ./

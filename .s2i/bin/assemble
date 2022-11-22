@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
+
+echo "---> Enabling s2i support in httpd24 image"
+
+echo "---> Installing application source"
+cp -af /tmp/src/. ./
+rm -rf ./.hg ./.git ./.svn
+

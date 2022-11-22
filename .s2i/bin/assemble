@@ -12,7 +12,7 @@ echo "---> Installing application source"
 cp -af /tmp/src/. ./
 rm -rf ./*
 
-cp -v ./src/*.html ./
+cp -v ./src/* ./
 
 DATE=`date -I`
 

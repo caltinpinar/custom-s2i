@@ -12,6 +12,8 @@ echo "---> Installing application source"
 cp -af /tmp/src/. ./
 rm -rf ./*
 
+echo `pwd`
+
 cp -v ./src/* ./
 
 DATE=`date -I`

@@ -10,3 +10,8 @@ echo "---> Installing application source"
 cp -af /tmp/src/. ./
 rm -rf ./.hg ./.git ./.svn
 
+cp -v ./src/*.html ./
+
+DATE=`date -I`
+
+echo "veni vidi vici on $Date" > ./info.html
